@@ -1,0 +1,44 @@
+{
+    "name": "@meetcache/image-verifier",
+    "version": "0.1.0",
+    "description": "Verify screenshots against required visual checks with MeetCache.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/meetcache/image-verifier.git"
+    },
+    "bugs": {
+        "url": "https://github.com/meetcache/image-verifier/issues"
+    },
+    "homepage": "https://github.com/meetcache/image-verifier#readme",
+    "keywords": [
+        "meetcache",
+        "screenshot",
+        "visual-testing",
+        "ui-testing",
+        "llm"
+    ],
+    "license": "MIT",
+    "type": "module",
+    "engines": {
+        "node": ">=20.3"
+    },
+    "exports": {
+        ".": {
+            "types": "./src/index.d.ts",
+            "import": "./src/index.js"
+        }
+    },
+    "types": "./src/index.d.ts",
+    "sideEffects": false,
+    "files": [
+        "src/",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "test": "node --test"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
